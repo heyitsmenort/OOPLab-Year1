@@ -13,18 +13,18 @@ public class Food {
     private static double price = 50;
     
     public static void setPrice(double price) {
-        if (price > price) {
-            Food.price = price;
+        if (price > price) {        // ถ้าราคาใหม่มากกว่าราคาเดิม
+            Food.price = price;    // เซ็ตราคาใหม่ได้เลย
         } else {
-            System.out.println("Cannot update the food price");
+            System.out.println("Cannot update the food price");   // ถ้าน้อยกว่า เซ็ตไม่ได้
         }
     }
     
-    public static double getPrice() {
+    public static double getPrice() {         // รับ price
         return price;
     }
     
-    public static int getEnergy() {
+    public static int getEnergy() {     // รับ energy มาได้เลยเพราะ energy เป็น final
         return Food.energy;
     }
 }
