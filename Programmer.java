@@ -10,7 +10,7 @@ package lab06;
  */
 public class Programmer extends Employee{
     
-    public Programmer() {
+    public Programmer() {    // อ้างอิง construct จากคลาส employee ที่เป็นคลาสแม่
         super();
     }
     
@@ -34,11 +34,11 @@ public class Programmer extends Employee{
         coding(s);
         }
     
-    public void setHappiness(int happiness) {
+    public void setHappiness(int happiness) { // กำหนดค่า happiness
         this.happiness = happiness;
     }
     
-    public int getHappiness() {
+    public int getHappiness() {   //รับค่า happiness
         return happiness;
     }
     
